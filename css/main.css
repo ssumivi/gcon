@@ -26,6 +26,35 @@ body {
   color: #333;
   font-family: "Noto Sans KR", sans-serif;
 }
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border: 3px solid #fff;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: block;
+  height: 10px;
+  background-color: #efefef;
+}
+
+::-webkit-scrollbar-track {
+  background: #efefef;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .2)
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, .2);
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, .1)
+}
 /* 공통클래스 */
 .cf::after {
   content: "";
@@ -272,7 +301,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 230px;
-  /* background-color: antiquewhite; */
+  background-color: #fff;
   /* scroll */
   max-height: 450px;
   overflow-y: auto;
@@ -310,11 +339,26 @@ body {
   float: right;
   margin-top: 11px;
 }
+.submenu_focus{
+  visibility: visible;
+  opacity: 1;
+  top: 65px;
+}
+.submenu_focus_link{
+  background-color: #ec008c;
+  width: 100%;
+}
+.submenu_focus_link > a{
+  color: #fff;
+}
 /* depth3 menu */
 .submenu-3rd {
   position: relative;
   background-color: #efd3ec;
   display: none;
+}
+.sub3_block{
+  display: block;
 }
 .submenu-3rd > li {
   position: relative;
