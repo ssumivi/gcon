@@ -68,4 +68,61 @@ $(document).ready(function () {
       }
     });
   });
+  //상단메뉴 처리관련 코드
+  var hTop = $(".header-top");
+  var hTop_H = hTop.height();
+  var hMiddle = $(".header-middle");
+  var hMiddle_H = hMiddle.height();
+  var hHeight = hTop_H + hMiddle_H;
+  $(window).scroll(function () {
+    // 스크롤 위치를 파악한다.
+    var scy = $(window).scrollTop();
+    if (scy >= hHeight) {
+      $(".header").addClass("h-fix");
+      $(".content").addClass("h-fix-mt");
+      $(".logo-gnb").addClass("h-show");
+      $(".gnb").addClass(".h-fix-gnb");
+    } else {
+      $(".header").removeClass("h-fix");
+      $(".content").removeClass("h-fix-mt");
+      $(".logo-gnb").removeClass("h-show");
+      $(".gnb").removeClass(".h-fix-gnb");
+    }
+  });
+  //gnb 관련
+  var gnb = $(".mainmenu");
+  var dim = $(".header-dim");
+  gnb.mouseenter(function () {
+    dim.stop().fadeIn(500);
+  });
+  gnb.mouseleave(function () {
+    dim.stop().fadeOut(500);
+  });
+  //swiper
+  //main whole swiper (content)
+  var sw_content = new Swiper(".sw-content", {
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    loopedSlides: true,
+  });
+  //sw-notice (mini slide)
+  var sw_notice = new Swiper(".sw-notice", {
+    autoplay: {
+      delay: 2000,
+      speed: 5000,
+    },
+    loop: true,
+    navigation: {
+      nextEl: ".sw-notice-next",
+      prevEl: ".sw-notice-prev",
+    },
+    pagination: {
+      el: ".sw-notice-pg",
+      type: "fraction",
+    },
+  });
+  //pause & play
 });

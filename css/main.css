@@ -91,6 +91,28 @@ body {
   display: block;
   background-color: #2a3a67;
 }
+/* 스크롤 내렸을 때 위쪽 메뉴 없어짐 */
+.h-fix{
+  position: fixed;
+  left: 0;
+  top: -141px;
+  width: 100%;
+}
+.h-fix-mt{
+  margin-top: 207px;
+}
+.h-show{
+  display: block !important;
+  width: 20%;
+  text-align: center;
+}
+.h-show img{
+  width: 70%;
+}
+.h-fix-gnb{
+  width: 80% !important;
+}
+
 .h-link-list {
   position: relative;
   display: block;
@@ -444,3 +466,5 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
 }
+/* content area */
+@import url("content.css");
