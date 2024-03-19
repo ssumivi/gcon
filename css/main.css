@@ -63,6 +63,10 @@ body {
   width: 100%;
   clear: both;
 }
+.swiper-container{
+  width: 100%;
+  height: 100%;
+}
 .pageW {
   position: relative;
   display: block;

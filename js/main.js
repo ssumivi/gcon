@@ -102,10 +102,10 @@ $(document).ready(function () {
   //main whole swiper (content)
   var sw_content = new Swiper(".sw-content", {
     loop: true,
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
+    // effect: "fade",
+    // fadeEffect: {
+    //   crossFade: true,
+    // },
     loopedSlides: true,
   });
   //sw-notice (mini slide)
@@ -125,4 +125,59 @@ $(document).ready(function () {
     },
   });
   //pause & play
+  //pause
+  $(".sw-notice-pause").click(function () {
+    for (var i = 0; i < sw_notice.length; i++) {
+      sw_notice[i].autoplay.stop();
+    }
+  });
+  // auto play
+  $(".sw-notice-play").click(function () {
+    for (var i = 0; i < sw_notice.length; i++) {
+      sw_notice[i].autoplay.start();
+    }
+  });
+  //notice list
+  var noticeA = $(".notice-menu > li");
+  $.each(noticeA, function (index, item) {
+    $(this)
+      .find("a")
+      .click(function (e) {
+        e.preventDefault();
+        //focus apply
+        //show tab content
+        showNotice(index);
+      });
+  });
+  //content zip
+  var noticeLi = $(".notice-cont > li");
+  //content show / focus move user named fnc : showNotice()
+  function showNotice(_index) {
+    noticeA.removeClass("notice-menu-focus");
+    noticeA.eq(_index).addClass("notice-menu-focus");
+    noticeLi.hide();
+    if (_index == 1) {
+      return;
+    }
+    noticeLi.eq(_index).show();
+  }
+  //edu swiper
+  var sw_edu = new Swiper(".sw-edu", {
+    autoplay: {
+      delay: 2000,
+      // 사용자가 터치드래그 하고 난 후 자동 실행
+      disableOnInteraction: false,
+    },
+    loop: true,
+    //중첩된(swiper 내부에 다른 swiper가 있는) swiper 인스턴스에 대해 스와이프 동작이 가능
+    nested: true,
+    navigation: {
+      nextEl: ".sw-edu-next",
+      prevEl: ".sw-edu-prev",
+    },
+    pagination: {
+      el: ".sw-edu-pg",
+      type: "fraction",
+    }
+  });
 });

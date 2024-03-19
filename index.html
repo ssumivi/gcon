@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/content.css">
     <!-- js -->
     <!-- jqeury -->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- swiper js -->
     <script src="js/swiper/swiper.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -361,8 +361,8 @@
               <div class="swiper-wrapper">
                 <!-- 1st swiper -->
                 <div class="swiper-slide">
-                  <!-- 1st swiper left -->
-                  <div class="content-notice cf">
+                  <div class="content-notice clearfix">
+                    <!-- 1번째 스와퍼의 좌 -->
                     <div class="content-box notice-bg">
                       <div class="swiper-container sw-notice">
                         <div class="swiper-wrapper">
@@ -382,7 +382,6 @@
                             <a href="#"><img src="images/notice_5.jpg" alt="" /></a>
                           </div>
                         </div>
-
                         <div class="sw-notice-player">
                           <button class="sw-notice-pause circle"></button>
                           <button class="sw-notice-play circle"></button>
@@ -394,96 +393,98 @@
                         </div>
                       </div>
                     </div>
-                    <!-- 1st swiper right -->
-                    <a href="#" class="content-more">더보기</a>
-                    <!-- menu -->
-                    <ul class="notice-menu cf">
-                      <li class="notice-menu-focus"><a href="#">사업공고</a></li>
-                      <li><a href="#">입찰공고</a></li>
-                      <li><a href="#">결과발표</a></li>
-                    </ul>
-                    <!-- content info -->
-                    <ul class="notice-cont">
-                      <li>
-                        <div class="notice-box">
-                          <!-- notice date -->
-                          <div class="notice-box-date">
-                            <span class="notice-box-yymm">2023.06</span>
-                            <span class="notice-box-dd">02</span>
+                    <!-- 1번째 스와퍼의 우 -->
+                    <div class="content-box">
+                      <a href="#" class="content-more">더보기</a>
+                      <!-- 메뉴 -->
+                      <ul class="notice-menu clearfix">
+                        <li class="notice-menu-focus"><a href="#">사업공고</a></li>
+                        <li><a href="#">입찰공고</a></li>
+                        <li><a href="#">결과발표</a></li>
+                      </ul>
+                      <!-- 컨텐트 내용 -->
+                      <ul class="notice-cont">
+                        <li>
+                          <div class="notice-box">
+                            <!-- 날짜 -->
+                            <div class="notice-box-date">
+                              <span class="notice-box-yymm">2023.06</span>
+                              <span class="notice-box-dd">02</span>
+                            </div>
+                            <!-- 내용 -->
+                            <div class="notice-box-txt">
+                              <a href="#">
+                                <span class="notice-box-tit"> [재공고]지역상권 연계 퓨처쇼 2021 참여기업 모집 </span>
+                                <span class="notice-box-more"> 자세히 보기<i class="xi-angle-right-thin"></i> </span>
+                              </a>
+                            </div>
                           </div>
-                          <!-- text -->
-                          <div class="notice-txt">
-                            <a href="#">
-                              <span class="notice-box-tit"> [재공고]지역상권 연계 퓨처쇼 2021 참여기업 모집 </span>
-                              <span class="notice-box-more"> 자세히 보기<i class="xi-angle-right-thin"></i> </span>
-                            </a>
+                          <div class="notice-box">
+                            <div class="notice-box-date">
+                              <span class="notice-box-yymm">2021.05</span>
+                              <span class="notice-box-dd">28</span>
+                            </div>
+                            <div class="notice-box-txt">
+                              <a href="#">
+                                <span class="notice-box-tit"> (모집기간연장) 2021 환경 콘텐츠 비즈니스 시장성강화 지원사업 지원자 공개모집 </span>
+                                <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
+                              </a>
+                            </div>
                           </div>
-                        </div>
-                        <div class="notice-box">
-                          <div class="notice-box-date">
-                            <span class="notice-box-yymm">2021.05</span>
-                            <span class="notice-box-dd">28</span>
+                          <div class="notice-box">
+                            <div class="notice-box-date">
+                              <span class="notice-box-yymm">2021.06</span>
+                              <span class="notice-box-dd">14</span>
+                            </div>
+                            <div class="notice-box-txt">
+                              <a href="#">
+                                <span class="notice-box-tit"> 「2021년 디자인 솔루션 랩」 참가기업 모집 공고 </span>
+                                <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
+                              </a>
+                            </div>
                           </div>
-                          <div class="notice-box-txt">
-                            <a href="#">
-                              <span class="notice-box-tit"> (모집기간연장) 2021 환경 콘텐츠 비즈니스 시장성강화 지원사업 지원자 공개모집 </span>
-                              <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
-                            </a>
+                        </li>
+                        <li>내용없음</li>
+                        <li>
+                          <div class="notice-box">
+                            <div class="notice-box-date">
+                              <span class="notice-box-yymm">2021.06</span>
+                              <span class="notice-box-dd">14</span>
+                            </div>
+                            <div class="notice-box-txt">
+                              <a href="#">
+                                <span class="notice-box-tit"> 2021년 경기 시나리오 기획개발지원 심사 결과 발표 </span>
+                                <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
+                              </a>
+                            </div>
                           </div>
-                        </div>
-                        <div class="notice-box">
-                          <div class="notice-box-date">
-                            <span class="notice-box-yymm">2021.06</span>
-                            <span class="notice-box-dd">14</span>
+                          <div class="notice-box">
+                            <div class="notice-box-date">
+                              <span class="notice-box-yymm">2021.05</span>
+                              <span class="notice-box-dd">08</span>
+                            </div>
+                            <div class="notice-box-txt">
+                              <a href="#">
+                                <span class="notice-box-tit"> 2021 경기인디시네마 지원작(상영지원/배급지원 통합공모) 선정결과 </span>
+                                <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
+                              </a>
+                            </div>
                           </div>
-                          <div class="notice-box-txt">
-                            <a href="#">
-                              <span class="notice-box-tit"> 「2021년 디자인 솔루션 랩」 참가기업 모집 공고 </span>
-                              <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
-                            </a>
+                          <div class="notice-box">
+                            <div class="notice-box-date">
+                              <span class="notice-box-yymm">2021.04</span>
+                              <span class="notice-box-dd">29</span>
+                            </div>
+                            <div class="notice-box-txt">
+                              <a href="#">
+                                <span class="notice-box-tit"> 2021년 융합콘텐츠 창업지원 경쟁부문 예비창업자 선발 최종선정결과 발표 </span>
+                                <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
+                              </a>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li>내용없음</li>
-                      <li>
-                        <div class="notice-box">
-                          <div class="notice-box-date">
-                            <span class="notice-box-yymm">2021.06</span>
-                            <span class="notice-box-dd">14</span>
-                          </div>
-                          <div class="notice-box-txt">
-                            <a href="#">
-                              <span class="notice-box-tit"> 2021년 경기 시나리오 기획개발지원 심사 결과 발표 </span>
-                              <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="notice-box">
-                          <div class="notice-box-date">
-                            <span class="notice-box-yymm">2021.05</span>
-                            <span class="notice-box-dd">08</span>
-                          </div>
-                          <div class="notice-box-txt">
-                            <a href="#">
-                              <span class="notice-box-tit"> 2021 경기인디시네마 지원작(상영지원/배급지원 통합공모) 선정결과 </span>
-                              <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="notice-box">
-                          <div class="notice-box-date">
-                            <span class="notice-box-yymm">2021.04</span>
-                            <span class="notice-box-dd">29</span>
-                          </div>
-                          <div class="notice-box-txt">
-                            <a href="#">
-                              <span class="notice-box-tit"> 2021년 융합콘텐츠 창업지원 경쟁부문 예비창업자 선발 최종선정결과 발표 </span>
-                              <span class="notice-box-more"> 자세히 보기 <i class="xi-angle-right-thin"></i> </span>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <!-- 2nd swiper -->
@@ -497,7 +498,7 @@
                           <a href="#" class="alarm-tit">교육 및 행사</a>
                           <a href="#" class="alarm-more">더보기</a>
                         </div>
-                        <div class="alarm-content">
+                        <div class="alarm-cont">
                           <a href="#" class="alarm-edu-link">
                             <span class="alarm-edu"></span>
                             <span class="alarm-edu-tit">[경기도1인크리에이터]</span>
