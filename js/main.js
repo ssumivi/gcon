@@ -102,11 +102,10 @@ $(document).ready(function () {
   //main whole swiper (content)
   var sw_content = new Swiper(".sw-content", {
     loop: true,
-    // effect: "fade",
-    // fadeEffect: {
-    //   crossFade: true,
-    // },
-    loopedSlides: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
   });
   //sw-notice (mini slide)
   var sw_notice = new Swiper(".sw-notice", {
