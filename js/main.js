@@ -106,6 +106,7 @@ $(document).ready(function () {
     fadeEffect: {
       crossFade: true,
     },
+    loopedSlides: 3,
   });
   //sw-notice (mini slide)
   var sw_notice = new Swiper(".sw-notice", {
@@ -177,6 +178,45 @@ $(document).ready(function () {
     pagination: {
       el: ".sw-edu-pg",
       type: "fraction",
-    }
+    },
+  });
+  //alarm tab menu
+  var alarmA = $(".alarm-tab-menu a");
+  var alarmCont = $(".alarm-tab-cont");
+  $.each(alarmA, function (index, item) {
+    $(this).click(function (e) {
+      e.preventDefault();
+      alarmA.removeClass("alarm-tab-menu-focus");
+      alarmA.eq(index).addClass("alarm-tab-menu-focus");
+      alarmCont.removeClass("alarm-tab-cont-focus");
+      alarmCont.eq(index).addClass("alarm-tab-cont-focus");
+    });
+  });
+  //alarm tab menu swiper
+  var sw_navi = new Swiper(".sw-navi", {
+    loop: true,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: ".sw-navi-next",
+      prevEl: ".sw-navi-prev",
+    },
+    centeredSlides: true,
+    loopedSlides: 3,
+    slideToClickedSlide: true,
+  });
+  // tab > content 연결
+  sw_content.controller.control = sw_navi;
+  sw_navi.controller.control = sw_content;
+  //hub area
+  // hubmenu save
+  var hubMenu = $(".hub-menu a");
+  // hub information
+  var hubInfos = $(".hub-info > li");
+  $.each(hubMenu, function (index, item) {
+    //hover action
+    $(this).mouseenter(function () {
+      hubInfos.removeClass("hub-info-focus");
+      hubInfos.eq(index).addClass("hub-info-focus");
+    });
   });
 });
