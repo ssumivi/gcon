@@ -219,4 +219,5 @@ $(document).ready(function () {
       hubInfos.eq(index).addClass("hub-info-focus");
     });
   });
+
 });
