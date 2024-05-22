@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>경기콘텐츠진흥원</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="icon shortcut" href="images/favicon.png" />
-    <!-- css -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>경기콘텐츠진흥원</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- prefixfree -->
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <!-- swiper -->
     <link rel="stylesheet" href="js/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <script src="js/swiper/swiper.min.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/xeicon/dingbat_xeicon.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/content.css" />
     <link rel="stylesheet" href="css/hub.css" />
     <link rel="stylesheet" href="css/sns.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
     <!-- js -->
-    <!-- jqeury -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/swiper/swiper.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <!-- <script src="js/prefixfree.min.js"></script> -->
-    <script src="js/respond.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/sns.js"></script>
+    <script src="js/footer.js"></script>
   </head>
   <body>
-    <!-- modal -->
-    <!-- fixmenu (side bar) -->
-    <!-- whole layout -->
+    <!-- 안내창 -->
+    <!-- 고정메뉴 -->
+    <!-- 고정메뉴 -->
+    <div class="fix-menu">
+      <ul class="fix-menu-list">
+        <li>
+          <a href="#content" class="fix-a fix-a-focus">
+            <i class="xi-bell-o"></i>
+            알림
+          </a>
+        </li>
+        <li>
+          <a href="#hub" class="fix-a">
+            <i class="xi-building"></i>
+            사업
+          </a>
+        </li>
+        <li>
+          <a href="#sns" class="fix-a">
+            <i class="xi-message-o"></i>
+            소통
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="gotop">
+        <i class="xi-angle-up-min"></i>
+        top
+      </a>
+    </div>
+    <!-- 전체영역 -->
     <div class="wrap">
-      <!-- top area -->
+      <!-- 상단영역 -->
       <header class="header">
-        <!-- header top -->
+        <!-- header-top -->
         <div class="header-top">
-          <div class="pageW cf">
-            <!-- link list -->
+          <div class="pagew clearfix">
+            <!-- link-list -->
             <ul class="h-link-list">
               <li><a href="#" title="경기문화창조허브">경기문화창조허브</a></li>
-              <li>
-                <a href="#" title="경기글로벌게임센터">경기글로벌게임센터</a>
-              </li>
-              <li>
-                <a href="#" title="경기콘텐츠코리아랩">경기콘텐츠코리아랩</a>
-              </li>
-              <li>
-                <a href="#" title="해외진출지원홈페이지">해외진출지원홈페이지</a>
-              </li>
+              <li><a href="#" title="경기글로벌게임센터">경기글로벌게임센터</a></li>
+              <li><a href="#" title="경기콘텐츠코리아랩">경기콘텐츠코리아랩</a></li>
+              <li><a href="#" title="해외진출지원홈페이지">해외진출지원홈페이지</a></li>
               <li><a href="#" title="경기영상위원회">경기영상위원회</a></li>
               <li><a href="#" title="경기게임문화센터">경기게임문화센터</a></li>
             </ul>
-            <!-- help list -->
+            <!-- help-list -->
             <ul class="h-help-list">
               <li>
                 <a href="#"><i class="xi-unlock-o"></i>로그인</a>
@@ -72,25 +93,27 @@
             </ul>
           </div>
         </div>
-        <!-- header middle -->
+        <!-- header-middle -->
         <div class="header-middle">
-          <div class="pageW cf">
-            <img src="images/gglogo.png" alt="경기로고" class="gglogo" />
+          <div class="pagew clearfix">
+            <img src="images/gglogo.png" alt="gglogo" class="gglogo" />
             <a href="#" class="logo">
               <img src="images/logo_new.png" alt="경기콘텐츠진흥원" />
             </a>
             <a href="#" class="bro">
-              <i><img src="images/brs-btn.png" alt="브로슈어" />브로슈어</i>
+              <i><img src="images/brs-btn.png" alt="브로슈어" /> 브로슈어</i>
             </a>
           </div>
         </div>
-        <!-- header bottom -->
+        <!-- header-bottom -->
         <div class="header-bottom">
-          <div class="pageW cf">
-            <!-- while scroll logo -->
-            <a href="#" class="logo-gnb"><img src="images/logo_new.png" alt="경기로고" /></a>
+          <div class="pagew clearfix">
+            <!-- 스크롤시 로고 -->
+            <a href="#" class="logo-gnb">
+              <img src="images/logo_new.png" alt="경기콘텐츠진흥원" />
+            </a>
             <div class="gnb">
-              <!-- main menu -->
+              <!-- mainmenu 시작 -->
               <ul class="mainmenu">
                 <li>
                   <a href="#">주요사업</a>
@@ -334,7 +357,7 @@
                   </ul>
                 </li>
               </ul>
-              <!-- more menu -->
+              <!-- more-menu -->
               <ul class="more-menu">
                 <li>
                   <a href="#" class="hm">
@@ -353,18 +376,19 @@
           </div>
         </div>
       </header>
-      <!-- sub menu에 hover 했을 때 바탕화면 -->
+      <!-- 서브메뉴에 호버했을때 바탕화면 -->
       <div class="header-dim"></div>
-      <!-- content area -->
+
+      <!-- 컨텐츠 영역 -->
       <div class="content" id="content">
-        <div class="pageW">
-          <!-- content top -->
+        <div class="pagew">
+          <!-- 컨텐츠상단 -->
           <div class="content-top">
             <div class="swiper-container sw-content">
               <div class="swiper-wrapper">
-                <!-- 1st swiper -->
+                <!-- 1번째 슬라이드 (공고알림) -->
                 <div class="swiper-slide">
-                  <div class="content-notice cf">
+                  <div class="content-notice clearfix">
                     <!-- 1번째 스와퍼의 좌 -->
                     <div class="content-box notice-bg">
                       <div class="swiper-container sw-notice">
@@ -400,7 +424,7 @@
                     <div class="content-box">
                       <a href="#" class="content-more">더보기</a>
                       <!-- 메뉴 -->
-                      <ul class="notice-menu cf">
+                      <ul class="notice-menu clearfix">
                         <li class="notice-menu-focus"><a href="#">사업공고</a></li>
                         <li><a href="#">입찰공고</a></li>
                         <li><a href="#">결과발표</a></li>
@@ -490,46 +514,50 @@
                     </div>
                   </div>
                 </div>
-                <!-- 2nd swiper -->
+                <!-- 2번째 슬라이드 (교육 및 기타 알림)-->
                 <div class="swiper-slide">
-                  <div class="content-alarm cf">
-                    <!-- 2nd swiper left -->
-                    <div class="content-box alarm-bg">
-                      <!-- left -->
-                      <div class="content-alarm-left">
-                        <div class="alarm-top">
-                          <a href="#" class="alarm-tit">교육 및 행사</a>
-                          <a href="#" class="alarm-more">더보기</a>
+                  <div class="content-alram clearfix">
+                    <!-- 2번째 슬라이드의 좌 -->
+                    <div class="content-box alram-bg">
+                      <!-- 좌 -->
+                      <div class="content-alram-left">
+                        <!-- 상단 -->
+                        <div class="alram-top">
+                          <a href="#" class="alram-tit">교육 및 행사</a>
+                          <a href="#" class="alram-more">더보기</a>
                         </div>
-                        <div class="alarm-cont">
-                          <a href="#" class="alarm-edu-link">
-                            <span class="alarm-edu"></span>
-                            <span class="alarm-edu-tit">[경기도1인크리에이터]</span>
-                            <span class="alarm-edu-desc">‘살롱 드 크리에이터’ 1회차 참여 크리에이터 모집 공고</span>
+                        <!-- 하단 -->
+                        <div class="alram-cont">
+                          <a href="#" class="alram-edu-link">
+                            <span class="alram-edu"></span>
+                            <span class="alram-edu-tit"> [경기도1인크리에이터] </span>
+                            <span class="alram-edu-desc"> ‘살롱 드 크리에이터’ 1회차 참여 크리에이터 모집 공고 </span>
                           </a>
                         </div>
                       </div>
-                      <!-- right -->
-                      <div class="content-alarm-right">
-                        <div class="alarm-top">
-                          <a href="#" class="alarm-tit">정책게시판</a>
-                          <a href="#" class="alarm-more">더보기</a>
+                      <!-- 우 -->
+                      <div class="content-alram-right">
+                        <!-- 상단 -->
+                        <div class="alram-top">
+                          <a href="#" class="alram-tit">정책게시판</a>
+                          <a href="#" class="alram-more">더보기</a>
                         </div>
-                        <div class="alarm-cont">
+                        <!-- 하단 -->
+                        <div class="alram-cont">
                           <div class="swiper-container sw-edu">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
-                                <a href="#" class="alarm-edu-link">
-                                  <span class="alarm-edu edu-bg1"></span>
-                                  <span class="alarm-edu-tit"> 경기도 옴부즈만 </span>
-                                  <span class="alarm-edu-desc"> 도민의 고충을 해결하는 도민의 진정한 대리인! </span>
+                                <a href="#" class="alram-edu-link">
+                                  <span class="alram-edu edu-bg1"></span>
+                                  <span class="alram-edu-tit"> 경기도 옴부즈만 </span>
+                                  <span class="alram-edu-desc"> 도민의 공충을 해결하는 도민의 진정한 대리인! </span>
                                 </a>
                               </div>
                               <div class="swiper-slide">
-                                <a href="#" class="alarm-edu-link">
-                                  <span class="alarm-edu edu-bg2"></span>
-                                  <span class="alarm-edu-tit"> 청렴포털 </span>
-                                  <span class="alarm-edu-desc"> 세상을 바꾸는 행동하는 양심 공익신고 </span>
+                                <a href="#" class="alram-edu-link">
+                                  <span class="alram-edu edu-bg2"></span>
+                                  <span class="alram-edu-tit"> 청렴포털 </span>
+                                  <span class="alram-edu-desc"> 세상을 바꾸는 행동하는 양심 공익신고 </span>
                                 </a>
                               </div>
                             </div>
@@ -542,106 +570,106 @@
                         </div>
                       </div>
                     </div>
-                    <!-- 2nd swiper right -->
-                    <div class="content-box alarm-list-bg">
-                      <div class="alarm-tab-menu">
-                        <a href="#" class="alarm-tab-menu-focus">공지사항</a>
+                    <!-- 2번째 슬라이드의 우 -->
+                    <div class="content-box alram-list-bg">
+                      <div class="alram-tab-menu">
+                        <a href="#" class="alram-tab-menu-focus">공지사항</a>
                         <a href="#">타기관 공고</a>
                       </div>
-                      <div class="alarm-tab-cont alarm-tab-cont-focus">
-                        <div class="alarm-cont-box">
-                          <span class="alarm-day">
+                      <div class="alram-tab-cont alram-tab-cont-focus">
+                        <div class="alram-cont-box">
+                          <span class="alram-day">
                             2021.06
                             <em>09</em>
                           </span>
                           <a href="#">
-                            <span class="alarm-box-tit"> 공시송달공고문[부정당업자입찰참가자격제한청문시행사전통지] </span>
-                            <span class="alarm-box-more">
+                            <span class="alram-box-tit"> 공시송달공고문[부정당업자입찰참가자격제한청문시행사전통지] </span>
+                            <span class="alram-box-more">
                               자세히 보기
                               <i class="xi-angle-right-thin"></i>
                             </span>
                           </a>
                         </div>
-                        <div class="alarm-cont-box">
-                          <span class="alarm-day">
+                        <div class="alram-cont-box">
+                          <span class="alram-day">
                             2021.05
                             <em>03</em>
                           </span>
                           <a href="#">
-                            <span class="alarm-box-tit"> [운영 재개] 경기XR센터 스타트업라운지 및 VR/AR체험공간 이용 안내 </span>
-                            <span class="alarm-box-more">
+                            <span class="alram-box-tit"> [운영 재개] 경기XR센터 스타트업라운지 및 VR/AR체험공간 이용 안내 </span>
+                            <span class="alram-box-more">
                               자세히 보기
                               <i class="xi-angle-right-thin"></i>
                             </span>
                           </a>
                         </div>
-                        <div class="alarm-cont-box">
-                          <span class="alarm-day">
+                        <div class="alram-cont-box">
+                          <span class="alram-day">
                             2021.04
                             <em>27</em>
                           </span>
                           <a href="#">
-                            <span class="alarm-box-tit"> 경기VR/AR제작거점센터 (경기XR센터) 시설/장비 이용 안내 </span>
-                            <span class="alarm-box-more">
+                            <span class="alram-box-tit"> 경기VR/AR제작거점센터 (경기XR센터) 시설/장비 이용 안내 </span>
+                            <span class="alram-box-more">
                               자세히 보기
                               <i class="xi-angle-right-thin"></i>
                             </span>
                           </a>
                         </div>
                       </div>
-                      <div class="alarm-tab-cont">
-                        <div class="alarm-cont-box">
-                          <span class="alarm-day">
+                      <div class="alram-tab-cont">
+                        <div class="alram-cont-box">
+                          <span class="alram-day">
                             2021.06
                             <em>09</em>
                           </span>
                           <a href="#">
-                            <span class="alarm-box-tit"> [경기도] ‘K-Beauty Expo 2021’ 안내 </span>
-                            <span class="alarm-box-more">
+                            <span class="alram-box-tit"> [경기도] ‘K-Beauty Expo 2021’ 안내 </span>
+                            <span class="alram-box-more">
                               자세히 보기
                               <i class="xi-angle-right-thin"></i>
                             </span>
                           </a>
                         </div>
-                        <div class="alarm-cont-box">
-                          <span class="alarm-day">
+                        <div class="alram-cont-box">
+                          <span class="alram-day">
                             2021.05
                             <em>03</em>
                           </span>
                           <a href="#">
-                            <span class="alarm-box-tit"> [성북문화재단] 제1회 성북청춘불패영화제 안내 </span>
-                            <span class="alarm-box-more">
+                            <span class="alram-box-tit"> [성북문화재단] 제1회 성북청춘불패영화제 안내 </span>
+                            <span class="alram-box-more">
                               자세히 보기
                               <i class="xi-angle-right-thin"></i>
                             </span>
                           </a>
                         </div>
-                        <div class="alarm-cont-box">
-                          <span class="alarm-day">
+                        <div class="alram-cont-box">
+                          <span class="alram-day">
                             2021.04
                             <em>27</em>
                           </span>
                           <a href="#">
-                            <span class="alarm-box-tit"> [경기수원월드컵재단] 2021 온라인 서포터즈 모집 </span>
-                            <span class="alarm-box-more">
+                            <span class="alram-box-tit"> [경기수원월드컵재단] 2021 온라인 서포터즈 모집 </span>
+                            <span class="alram-box-more">
                               자세히 보기
                               <i class="xi-angle-right-thin"></i>
                             </span>
                           </a>
                         </div>
                       </div>
-                      <a href="#" class="alarm-link">더보기</a>
+                      <a href="#" class="alram-link">더보기</a>
                     </div>
                   </div>
                 </div>
-                <!-- 3rd swiper -->
+                <!-- 3번째 슬라이드 (월별 행사 알림)-->
                 <div class="swiper-slide">
-                  <div class="calender-wrap cf">
-                    <!-- left -->
+                  <div class="calendar-wrap clearfix">
+                    <!-- 좌 -->
                     <div class="content-box cal-bg">
-                      <!-- calender -->
+                      <!-- 여기는 달력 코딩자리 -->
                     </div>
-                    <!-- right -->
+                    <!-- 우 -->
                     <div class="content-box cal-bg-list">
                       <ul class="cal-list">
                         <li>
@@ -692,17 +720,17 @@
               </div>
             </div>
           </div>
-          <!-- content bottom (nav) -->
+          <!-- 컨텐츠히단 (navi) -->
           <div class="content-navi">
             <div class="swiper-container sw-navi">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="content-tab">
-                    <img src="images/logo_sm01_oct.jpg" alt="달력" class="content-tab-img" />
+                    <img src="images/logo_sm01_oct.jpg" alt="달력배경" class="content-tab-img" />
                     <span class="content-tab-icon">
                       <i class="xi-message-o"></i>
                     </span>
-                    <span class="content-tab-tit">공고알림</span>
+                    <span class="content-tab-tit">공고 알림</span>
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -734,10 +762,10 @@
           </div>
         </div>
       </div>
-      <!-- hub area -->
+      <!-- 허브영역 -->
       <div class="hub" id="hub">
-        <div class="pageW">
-          <!-- hub top -->
+        <div class="pagew">
+          <!-- 허브상단 -->
           <div class="hub-top">
             <ul class="hub-info">
               <li class="hub-info-focus">
@@ -853,9 +881,9 @@
               </li>
             </ul>
           </div>
-          <!-- hub bottom -->
+          <!-- 허브 하단 -->
           <div class="hub-bottom">
-            <ul class="hub-menu cf">
+            <ul class="hub-menu clearfix">
               <li>
                 <a href="#">
                   <span class="h-icon"></span>
@@ -920,12 +948,12 @@
           </div>
         </div>
       </div>
-      <!-- sns area -->
+      <!-- sns영역 -->
       <div class="sns" id="sns">
-        <div class="pageW cf">
+        <div class="pagew clearfix">
           <!-- sns left -->
           <div class="sns-left">
-            <div class="sns-top cf">
+            <div class="sns-top clearfix">
               <h3 class="sns-tit">SNS</h3>
               <ul class="sns-cate">
                 <li>
@@ -950,6 +978,7 @@
               </ul>
             </div>
             <div class="sns-list">
+              <!-- 페이스북 -->
               <div class="sns-cont">
                 <div class="sns-box sns-box-left">
                   <a href="#">
@@ -976,6 +1005,7 @@
                   </a>
                 </div>
               </div>
+              <!-- 인스타그램 -->
               <div class="sns-cont">
                 <div class="sns-box sns-box-left">
                   <a href="#">
@@ -1002,6 +1032,7 @@
                   </a>
                 </div>
               </div>
+              <!-- 유투브 -->
               <div class="sns-cont">
                 <div class="sns-box sns-box-left">
                   <a href="#">
@@ -1028,6 +1059,7 @@
                   </a>
                 </div>
               </div>
+              <!-- 네이버 -->
               <div class="sns-cont">
                 <div class="sns-box sns-box-left">
                   <a href="#">
@@ -1060,7 +1092,7 @@
           <div class="sns-right">
             <div class="news-top">
               <h3 class="news-tit sns-tit">NEWS ROOM</h3>
-              <ul class="news-cate cf">
+              <ul class="news-cate clearfix">
                 <li><a href="#" class="news-focus">보도자료</a></li>
                 <li><a href="#">오피니언</a></li>
                 <li><a href="#">자료실</a></li>
@@ -1068,7 +1100,7 @@
               <a href="#" class="news-more"></a>
             </div>
             <div class="news-list">
-              <div class="news-cont cf">
+              <div class="news-cont clearfix">
                 <div class="news-left">
                   <div class="news-box">
                     <div class="news-img">
@@ -1110,7 +1142,7 @@
                   </div>
                 </div>
               </div>
-              <div class="news-cont cf">
+              <div class="news-cont clearfix">
                 <div class="news-left">
                   <div class="news-box">
                     <div class="news-img">
@@ -1152,7 +1184,7 @@
                   </div>
                 </div>
               </div>
-              <div class="news-cont cf">
+              <div class="news-cont clearfix">
                 <div class="news-left">
                   <div class="news-box">
                     <div class="news-img">
@@ -1198,9 +1230,9 @@
           </div>
         </div>
       </div>
-      <!-- news banner -->
+      <!-- 뉴스베너 -->
       <div class="news-banner">
-        <div class="pageW">
+        <div class="pagew">
           <img src="images/newsimg.png" alt="" class="banner-img" />
           <p class="banner-txt">
             <span class="banner-tit">뉴스레터</span>
@@ -1210,50 +1242,174 @@
           <a href="#" class="banner-more">더보기</a>
         </div>
       </div>
-      <!-- sevice -->
+      <!-- 서비스 -->
       <div class="service">
-        <div class="pageW">
+        <div class="pagew">
           <ul class="service-list clearfix">
             <li>
-                <a href="#">
-                    <img src="images/service_01.jpg" alt="">
-                    <p class="service-txt">
-                        <span class="service-tit">채용정보</span>
-                        <span class="service-desc">자세히보기</span>
-                    </p>
-                </a>
+              <a href="#">
+                <img src="images/service_01.jpg" alt="" />
+                <p class="service-txt">
+                  <span class="service-tit">채용정보</span>
+                  <span class="service-desc">자세히보기</span>
+                </p>
+              </a>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/service_02.jpg" alt="">
-                    <p class="service-txt">
-                        <span class="service-tit">고객의소리</span>
-                        <span class="service-desc">자세히보기</span>
-                    </p>
-                </a>
+              <a href="#">
+                <img src="images/service_02.jpg" alt="" />
+                <p class="service-txt">
+                  <span class="service-tit">고객의소리</span>
+                  <span class="service-desc">자세히보기</span>
+                </p>
+              </a>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/service_03.jpg" alt="">
-                    <p class="service-txt">
-                        <span class="service-tit">클린신고센터</span>
-                        <span class="service-desc">자세히보기</span>
-                    </p>
-                </a>
+              <a href="#">
+                <img src="images/service_03.jpg" alt="" />
+                <p class="service-txt">
+                  <span class="service-tit">클린신고센터</span>
+                  <span class="service-desc">자세히보기</span>
+                </p>
+              </a>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/service_04.jpg" alt="">
-                    <p class="service-txt">
-                        <span class="service-tit">
-                            경기도 콘텐츠<br>
-                            공정거래상담센터
-                        </span>
-                        <span class="service-desc">자세히보기</span>
-                    </p>
-                </a>
+              <a href="#">
+                <img src="images/service_04.jpg" alt="" />
+                <p class="service-txt">
+                  <span class="service-tit">
+                    경기도 콘텐츠<br />
+                    공정거래상담센터
+                  </span>
+                  <span class="service-desc">자세히보기</span>
+                </p>
+              </a>
             </li>
-        </ul>
+          </ul>
+        </div>
+      </div>
+      <!-- 하단 -->
+      <div class="footer">
+        <div class="footer-menu">
+          <div class="pagew">
+            <ul class="footer-menu-list">
+              <li>
+                <a href="#"><img src="images/f_menu01.jpg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/f_menu02.gif" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/f_menu03.gif" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/f_menu04.gif" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/f_menu05.gif" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/f_menu06.gif" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-wrap">
+          <div class="pagew">
+            <div class="footer-copy">
+              <ul class="footer-help">
+                <li>
+                  <a href="#"><strong>개인정보처리방침</strong></a>
+                </li>
+                <li><a href="#">이메일무단수집거부</a></li>
+              </ul>
+              <ul class="footer-copy-list">
+                <li>(우) 14557 경기도 부천시 부천로198번길 18(춘의동) 춘의테크노파크Ⅱ 202동 9층</li>
+                <li>TEL.032)623-8000 FAX. 032)623-8088</li>
+                <li>Copyrightⓒ 2021 GYEONGGI CONTENT AGENCY All rights reserved.</li>
+              </ul>
+            </div>
+            <div class="footer-etc clearfix">
+              <ul class="sns-icon-list">
+                <li>
+                  <a href="#">
+                    <i class="xi-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="xi-blogger"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="xi-youtube-play"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="link-site">
+                <a href="#" class="link-list-bt">
+                  관련사이트 바로가기
+                  <i class="xi-caret-up-min"></i>
+                </a>
+                <div class="link-site-wrap">
+                  <dl class="link-site-list">
+                    <dt>내부관련사이트</dt>
+                    <dd><a href="#">경기영상위원회</a></dd>
+                    <dd><a href="#">PlayX4</a></dd>
+                    <dd><a href="#">경기콘텐츠코리아랩</a></dd>
+                    <dd><a href="#">경기문화창조허브</a></dd>
+                    <dd><a href="#">인디스땅스</a></dd>
+                    <dd><a href="#">경기 동네 서점전</a></dd>
+                    <dd><a href="#">빅포럼</a></dd>
+                    <dd><a href="#">경기 빅데이터 콘테스트</a></dd>
+                    <dd><a href="#">경기 필름스쿨 페스티벌</a></dd>
+                    <dd><a href="#">경기도 빅데이터 플랫폼</a></dd>
+                    <dd><a href="#">REUTERS</a></dd>
+                    <dt>외부관련사이트</dt>
+                    <dd><a href="#">세계속의 경기도</a></dd>
+                    <dd><a href="#">문화체육관광부</a></dd>
+                    <dd><a href="#">경기도의회</a></dd>
+                    <dd><a href="#">한국콘텐츠진흥원</a></dd>
+                    <dd><a href="#">경기영상위원회</a></dd>
+                    <dd><a href="#">성남산업진흥재단</a></dd>
+                    <dd><a href="#">서울애니메이션센터</a></dd>
+                    <dd><a href="#">기업마당</a></dd>
+                    <dd><a href="#">한국만화영상진흥원</a></dd>
+                    <dd><a href="#">광주정보문화산업진흥회</a></dd>
+                    <dd><a href="#">부산정보산업진흥원</a></dd>
+                    <dd><a href="#">청주시문화산업진흥재단</a></dd>
+                    <dd><a href="#">강원정보문화진흥원</a></dd>
+                    <dd><a href="#">kotra</a></dd>
+                    <dd><a href="#">경기문화창조허브</a></dd>
+                    <dd><a href="#">울산문화산업개발원</a></dd>
+                    <dd><a href="#">인천경제산업 정보테크노파크</a></dd>
+                    <dd><a href="#">경남문화예술진흥원</a></dd>
+                    <dd><a href="#">(재)전남정보문화산업진흥원</a></dd>
+                    <dd><a href="#">경상북도문화콘텐츠진흥원</a></dd>
+                    <dd><a href="#">(재)전라북도문화콘텐츠산업진흥원</a></dd>
+                    <dd><a href="#">고양지식정보산업진흥원</a></dd>
+                    <dd><a href="#">전주정보문화산업진흥원</a></dd>
+                    <dd><a href="#">제주테크노파크</a></dd>
+                    <dd><a href="#">(재)대구디지털산업진흥원</a></dd>
+                    <dd><a href="#">대전정보문화산업진흥원</a></dd>
+                    <dd><a href="#">충남문화산업진흥원</a></dd>
+                    <dd><a href="#">경인지방통계청</a></dd>
+                    <dd><a href="#">콘텐츠코리아랩</a></dd>
+                    <dd><a href="#">한국게임산업협회</a></dd>
+                    <dd><a href="#">경제창조경제혁신센터</a></dd>
+                    <dd><a href="#">문화창조융합센터</a></dd>
+                    <dd><a href="#">NIA 한국정보화진흥원</a></dd>
+                    <dd><a href="#">한국저작권보호원</a></dd>
+                    <dd><a href="#">이지비즈</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="wa-link">
+              <img src="images/wa.png" alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -148,7 +148,6 @@
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 60px;
-  z-index: 5;
 }
 .notice-menu > li {
   position: relative;
@@ -203,7 +202,7 @@
   display: block;
   width: 570px;
   height: 75px;
-  margin-top: 45px;
+  margin-bottom: 35px;
 }
 .notice-box-date {
   position: relative;
@@ -274,22 +273,27 @@
 
   line-height: 1.7rem;
 }
-/* alarm 2nd slide*/
-.content-alarm {
+.notice-box-more i {
+  padding-left: 12px;
+  vertical-align: -2px;
+}
+/* 공지사항 영역 */
+/* 알림 영역 */
+.content-alram {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
-.alarm-bg {
+.alram-bg {
   background: #2a3a67 url("../images/bg_pattern.png");
 }
-.alarm-list-bg {
+.alram-list-bg {
   background: url("../images/bg_gray.jpg") no-repeat center;
   background-size: cover;
 }
-.content-alarm-left,
-.content-alarm-right {
+.content-alram-left,
+.content-alram-right {
   position: relative;
   display: block;
   width: 50%;
@@ -297,11 +301,11 @@
   float: left;
   padding: 40px 17px 20px 25px;
 }
-.alarm-top {
+.alram-top {
   position: relative;
   display: block;
 }
-.alarm-tit {
+.alram-tit {
   position: relative;
   display: block;
   font-family: "NanumSquare";
@@ -311,7 +315,7 @@
   letter-spacing: -0.5px;
   line-height: 30px;
 }
-.alarm-tit:before {
+.alram-tit:before {
   content: "";
   position: absolute;
   left: 0;
@@ -321,10 +325,11 @@
   background: #fff;
   border-radius: 100%;
 }
-.alarm-more {
+.alram-more {
   position: absolute;
   right: 0;
   top: 9px;
+
   display: block;
   font-family: "NanumSquare";
   font-size: 1.7rem;
@@ -332,12 +337,15 @@
   color: #fff;
   letter-spacing: -0.5px;
 }
-.alarm-cont {
+.alram-cont {
   position: relative;
   display: block;
   padding-top: 35px;
 }
-.alarm-edu {
+.alram-edu-link:hover .alram-edu-tit {
+  text-decoration: underline;
+}
+.alram-edu {
   position: relative;
   display: block;
   width: 100%;
@@ -348,7 +356,7 @@
   margin-bottom: 25px;
 }
 
-.alarm-edu-tit {
+.alram-edu-tit {
   position: relative;
   display: block;
   font-family: "NanumSquare";
@@ -359,7 +367,7 @@
   margin-bottom: 10px;
 }
 
-.alarm-edu-desc {
+.alram-edu-desc {
   position: relative;
   display: block;
   font-family: "NanumSquare";
@@ -367,9 +375,6 @@
   font-weight: 100;
   line-height: 2.4rem;
   color: #fff;
-}
-.alarm-edu-link:hover .alarm-edu-tit {
-  text-decoration: underline;
 }
 .sw-edu {
   padding-bottom: 60px;
@@ -379,6 +384,7 @@
   right: 0;
   bottom: 0;
   display: block;
+
   white-space: nowrap;
 }
 .sw-edu-prev {
@@ -438,7 +444,14 @@
   background: url("../images/edu2.png") no-repeat top;
   background-size: cover;
 }
-.alarm-tab-menu a {
+.alram-tab-menu {
+  position: relative;
+  display: block;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.alram-tab-menu a {
   position: relative;
   display: inline-block;
   font-size: 2.4rem;
@@ -450,7 +463,7 @@
   transition: color 0.3s;
 }
 
-.alarm-tab-menu a:before {
+.alram-tab-menu a:before {
   content: "";
   position: absolute;
   left: 0;
@@ -462,19 +475,19 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
-.alarm-tab-menu a:hover {
+.alram-tab-menu a:hover {
   color: rgba(85, 85, 85, 1);
 }
-.alarm-tab-menu a:hover::before {
+.alram-tab-menu a:hover::before {
   opacity: 1;
 }
-.alarm-tab-menu-focus {
+.alram-tab-menu-focus {
   color: rgba(85, 85, 85, 1) !important;
 }
-.alarm-tab-menu-focus:before {
+.alram-tab-menu-focus:before {
   opacity: 1 !important;
 }
-.alarm-tab-cont {
+.alram-tab-cont {
   position: relative;
   display: none;
 
@@ -482,18 +495,18 @@
   padding-right: 0;
 }
 
-.alarm-tab-cont-focus {
+.alram-tab-cont-focus {
   display: block !important;
 }
 
-.alarm-cont-box {
+.alram-cont-box {
   position: relative;
   display: block;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
-.alarm-day {
+.alram-day {
   position: relative;
   display: block;
   width: 62px;
@@ -507,7 +520,7 @@
   font-family: "NanumSquare";
 }
 
-.alarm-day em {
+.alram-day em {
   position: relative;
   display: block;
   font-size: 4.8rem;
@@ -515,7 +528,7 @@
   font-style: normal;
 }
 
-.alarm-cont-box a {
+.alram-cont-box a {
   position: relative;
   display: block;
   margin-left: 40px;
@@ -524,11 +537,11 @@
   float: left;
 }
 
-.alarm-cont-box a:hover .alarm-box-tit {
+.alram-cont-box a:hover .alram-box-tit {
   text-decoration: underline;
 }
 
-.alarm-box-tit {
+.alram-box-tit {
   position: relative;
   display: block;
   font-size: 2rem;
@@ -538,7 +551,7 @@
   font-family: "NanumSquare";
 }
 
-.alarm-box-more {
+.alram-box-more {
   position: absolute;
   left: 0;
   bottom: -4px;
@@ -551,11 +564,11 @@
   letter-spacing: -2.5px;
 }
 
-.alarm-box-more i {
+.alram-box-more i {
   vertical-align: -2px;
 }
 
-.alarm-link {
+.alram-link {
   position: absolute;
   top: 75px;
   right: 60px;
@@ -564,8 +577,8 @@
   font-size: 1.7rem;
   font-weight: 500;
 }
-/* 3rd slide */
-.calender-wrap {
+/* 세번째 슬라이드 */
+.calendar-wrap {
   position: relative;
   display: block;
 }
@@ -649,14 +662,14 @@
   font-weight: 500;
   color: #fff;
 }
-/* content bottom (navi) */
+/*  <!-- 컨텐츠히단 (navi) --> */
 .content-navi {
   position: relative;
   display: block;
   height: 80px;
   width: 1280px;
-  margin: 0 auto;
   background-color: #fff;
+  margin: auto;
 }
 .content-tab {
   position: relative;
@@ -746,19 +759,20 @@
 .sw-navi-next:hover {
   color: #ec008c;
 }
-/* 현재 포커스 된 slide */
-.sw-navi .swiper-slide-active .content-tab{
+/* 현재 포커스가 된 slide */
+.sw-navi .swiper-slide-active .content-tab {
   background-color: #ec008c;
 }
-.sw-navi .swiper-slide-active .content-tab .content-tab-img{
+.sw-navi .swiper-slide-active .content-tab .content-tab-img {
   display: none;
+
 }
-.sw-navi .swiper-slide-active .content-tab .content-tab-icon{
+.sw-navi .swiper-slide-active .content-tab .content-tab-icon {
   opacity: 1;
   background-color: #ec008c;
 }
 .sw-navi .swiper-slide-active .content-tab .content-tab-icon i{
-  opacity: .5;
+  opacity: 0.5;
 }
 .sw-navi .swiper-slide-active .content-tab .content-tab-tit{
   color: #fff;

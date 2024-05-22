@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* hub area */
+/* 허브영역 */
 .hub {
   position: relative;
   display: block;
@@ -9,7 +9,7 @@
   background-size: cover;
   padding-top: 80px;
 }
-.hub .pageW {
+.hub .pagew {
   width: 1420px;
 }
 .hub-top {
@@ -86,105 +86,105 @@
   font-weight: 400;
   line-height: 2.7rem;
 }
-/* hub bottom */
+/* 허브 하단 */
 .hub-bottom {
-  position: relative;
-  display: block;
-  background-color: rgba(25, 43, 93, 0.9);
-}
-.hub-menu {
-  position: relative;
-  display: block;
-  width: 95%;
-  margin: 0 auto;
-}
-
-.hub-menu > li {
-  position: relative;
-  display: block;
-  float: left;
-  width: 10%;
-
-  text-align: center;
+    position: relative;
+    display: block;
+    background-color: rgba(25, 43, 93, 0.9);
+}.hub-menu {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
 }
 
-.hub-menu > li > a {
-  position: relative;
-  display: inline-block;
-  margin: 4rem 0;
-  transition: transform 0.3s;
+.hub-menu>li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 10%;
+
+    text-align: center;
 }
-.hub-menu > li > a:hover{
+
+.hub-menu>li>a {
+    position: relative;
+    display: inline-block;
+    margin: 4rem 0;
+    transition: transform 0.3s;
+}
+.hub-menu>li>a:hover{
     transform: translateY(-10%);
 }
-.h-icon {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 100%;
-  background: rgba(255, 255, 255, 0.1);
+.h-icon{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
 }
-.h-icon::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 42px;
-  height: 45px;
-  background: url("../images/conIcon.png") no-repeat;
+.h-icon::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 42px;
+    height: 45px;
+    background: url('../images/conIcon.png') no-repeat;
 }
-.hub-menu > li:nth-child(1) > a .h-icon:after {
-  background-position-x: 0;
+.hub-menu>li:nth-child(1)>a .h-icon:after {
+    background-position-x: 0;
 }
 
-.hub-menu > li:nth-child(2) > a .h-icon:after {
-  background-position-x: -129px;
+.hub-menu>li:nth-child(2)>a .h-icon:after {
+    background-position-x: -129px;
 }
 
-.hub-menu > li:nth-child(3) > a .h-icon:after {
-  background-position-x: -257px;
+.hub-menu>li:nth-child(3)>a .h-icon:after {
+    background-position-x: -257px;
 }
 
-.hub-menu > li:nth-child(4) > a .h-icon:after {
-  background-position-x: -392px;
+.hub-menu>li:nth-child(4)>a .h-icon:after {
+    background-position-x: -392px;
 }
 
-.hub-menu > li:nth-child(5) > a .h-icon:after {
-  background-position-x: -526px;
+.hub-menu>li:nth-child(5)>a .h-icon:after {
+    background-position-x: -526px;
 }
 
-.hub-menu > li:nth-child(6) > a .h-icon:after {
-  background: url("../images/vr_icon.png") no-repeat center;
+.hub-menu>li:nth-child(6)>a .h-icon:after {
+    background: url('../images/vr_icon.png') no-repeat center;
 }
 
-.hub-menu > li:nth-child(7) > a .h-icon:after {
-  background-position-x: -927px;
+.hub-menu>li:nth-child(7)>a .h-icon:after {
+    background-position-x: -927px;
 }
 
-.hub-menu > li:nth-child(8) > a .h-icon:after {
-  background-position-x: -1058px;
+.hub-menu>li:nth-child(8)>a .h-icon:after {
+    background-position-x: -1058px;
 }
 
-.hub-menu > li:nth-child(9) > a .h-icon:after {
-  background-position-x: -1187px;
+.hub-menu>li:nth-child(9)>a .h-icon:after {
+    background-position-x: -1187px;
 }
 
-.hub-menu > li:nth-child(10) > a .h-icon:after {
-  background: url("../images/ggsc_icon.png") no-repeat center;
+.hub-menu>li:nth-child(10)>a .h-icon:after {
+    background: url('../images/ggsc_icon.png') no-repeat center;
 }
 .h-txt {
-  position: relative;
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #fff;
-  font-family: "NanumSquare";
-  margin-top: 1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'NanumSquare';
+    margin-top: 1rem;
 }
 
 .h-sm {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
